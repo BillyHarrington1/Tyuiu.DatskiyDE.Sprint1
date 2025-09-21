@@ -9,8 +9,9 @@ namespace Tyuiu.DatskiyDE.Sprint1.Task7.V22.Lib
     {
         public double Calculate(double x, double y)
         {
-            double res = Math.Pow(1 - Math.Tan(x), 1 / Math.Tan(x)) + Math.Cos(x - y);
-            return res;
+
+            double res = Math.Pow(1 - Math.Tan(x), 1 / Math.Tan(x)) + Math.Cos(x - y);          
+            return Math.Round(res, 3);
         }
     }
 }
